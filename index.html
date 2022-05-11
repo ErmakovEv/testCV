@@ -3,86 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Ermakov CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <td>
-            <img src="ava.jpg" width="200" alt="фото">
-        </td>
-        <td>
-            <h1>Ермаков Евгений</h1>
-            <p> <em>Мне <strong>33</strong> года, я родился в <strong>Ковылкино</strong> </em></p>
-            <p>Я учусь <strong>программировать</strong> </p>
-        </td>
-    </table>
+    <div class="container">
+        <div class="info">
+            <img src="ava.jpg" alt="фото" class="avatar">
 
-    <hr>
+            <div class="info-text">
+                <h1>Ермаков Евгений</h1>
+                <p> Мне <strong>33</strong> года, я родился в <strong>Ковылкино</strong> </em></p>
+                <p>Я учусь <strong>программировать</strong> </p>
+    
+                <h4>Контактная информация</h4>
+                   <a href="https://ya.ru" target="_blank">Yandex</a> |
+                    <a href="https://t.me/ErmakovES" target="_blank">Telegram</a>
+            </div>
 
-    <h3>Место работы</h3>
-    <ul type="square">
-        <li>
-            ПАО "НПО "Алмаз"
-        </li>
-        <li>
-            ведущий инженер
-        </li>
-    </ul>
+        </div>
 
-    <h3>Место жительства</h3>
-    <table border="">
-        <tr>
-            <th>Место</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>Ковылкино</td>
-            <td>1988-2005</td>
-        </tr>
-        <tr>
-            <td>Горелово</td>
-            <td>2005-2010</td>
-        </tr>
-        <tr>
-            <td>Ваганово</td>
-            <td>2010-2017</td>
-        </tr>
-    </table>
+        <div class="card bg-yellow">
+            <h3>Место работы</h3>
+            <ul type="square" class="unlist">
+                <li>
+                    ПАО "НПО "Алмаз"
+                </li>
+                <li>
+                    ведущий инженер
+                </li>
+            </ul>
+        </div>
 
-    <h3>Контактная информация</h3>
-    <ol type="I">
-        <li>tel:+7 981 711 25 33</li>
-        <li>e-mail:ej-88@mail.ru</li>
-        <li> <a href="https://t.me/ErmakovES" target="_blank">Telegram</a> </li>
-    </ol>
+        <div class="card bg-green">
+            <h3>Место жительства</h3>
+            <table class="table">
+                <tr>
+                    <td>Ковылкино</td>
+                    <td>1988-2005</td>
+                </tr>
+                <tr>
+                    <td>Горелово</td>
+                    <td>2005-2010</td>
+                </tr>
+                <tr>
+                    <td>Ваганово</td>
+                    <td>2010-2016</td>
+                </tr>
+                <tr>
+                    <td>Хвойный</td>
+                    <td>2017-2018</td>
+                </tr>
+                <tr>
+                    <td>Мурино</td>
+                    <td>2018-2020</td>
+                </tr>
+                <tr>
+                    <td>Питер</td>
+                    <td>2020-now</td>
+                </tr>
+            </table>
+        </div>
 
-    <hr>
+        <div class="card bg-red">
+            <h3>
+                Курсы
+            </h3>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.youtube.com/channel/UCGlYKd-FR4g0Tp4wF6_wxig"> C++ </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/VladilenMinin"> JS </a>
+                </li>
+            </ul>
 
-    <h2>
-        Курсы
-    </h2>
-    <ul>
-        <li> <a href="courses.html" target="_blank">Список курсов</a>  </li>
-    </ul>
+        </div>
 
-    <hr>
+        <div class="contact">
+            <h3>Связаться со мной</h3>
+            <form action="">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" name="" id="name"
+                        placeholder="Ввод текста">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Ваш e-mail:</label>
+                        <input type="text" name="" id="name"
+                        placeholder="Ввод адреса">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Ваше сообщение:</label>
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10">Текст сообщения</textarea>
+                </div>
+                <input class="key" type="submit" value="Жми!"> 
+            </form>
+        </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="" id="name"
-        placeholder="Ввод текста">
-        <br>
-        <br>
-        <label for="name">Ваш e-mail:</label>
-        <input type="text" name="" id="name"
-        placeholder="Ввод адреса">
-        <br>
-        <br>
-        <label for="name">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Жми!"> 
-    </form>
+
+        <div class="position">
+            <div class="box"></div>
+        </div>
+        
+    </div>
 </body>
 </html>
+

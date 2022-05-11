@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+body{
+    background-color: #f1f1f1;
+    color:#0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active{
+    color:aquamarine;
+}
+
+a:visited {
+    color:grey;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 10%;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    padding: 15px 20px;
+    background-color: red;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.bg-yellow{
+    background-color:#fff9dc;
+}
+
+.bg-green{
+    background-color: #e5ffe7;
+}
+
+.bg-red{
+    background-color: #ffe5e5;
+}
+
+.info{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.info-text{
+    margin-left: 40px;
+}
+
+.info-text h4{
+    margin-bottom: 10px;
+}
+
+.info p {
+    color:#86898f;
+    margin: 0;
+    /* font-size: initial; */
+    /* font-weight: bold; */
+    text-decoration:none;
+    /* text-transform: uppercase; */
+    /* letter-spacing: ; */
+}
+
+.info h4 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.unlist{
+    padding:0px 20px;
+    /* list-style: none; */
+}
+
+.unlist li{
+    color:#03215d;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+/*Box-model*/
+/* .social {
+    background-color: red;
+    padding: 15px 40px;
+    border: 5px solid green;
+    margin: 20px;
+} */
+
+.container{
+    max-width: 750px;
+    margin:auto;
+    padding-top: 30px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2) {
+    color: blue;
+}
+
+.link-list {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.contact h3{
+    text-align: center;
+    text-decoration: underline;
+    /* text-transform:uppercase; */
+}
+
+.form-group label{
+    padding-bottom: 0px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border:none;
+    font-size: 12px;
+    font-family:'Roboto', sans-serif;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    color:#86898f;
+
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+.row > .form-group{
+    width: 50%;
+
+}
+
+.row > .form-group:first-child{
+    margin-right: 20px;
+}
+
+.key{
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
+
+.key:hover{
+    opacity: 0.7;
+}
+
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display:block
+    }
+}
